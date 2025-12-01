@@ -1,0 +1,44 @@
+$def with (data_type)
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>实验结果标注工具</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧展示区 -->
+        <div class="main-area" id="mainArea">
+            <div id="gridContainer" class="grid-container">
+                <!-- 动态内容 -->
+            </div>
+            
+            <!-- 底部控制栏 -->
+            <div class="footer-controls">
+                <span>每页行数: <input type="number" id="inputRows" value="4" min="1"></span>
+                <span>每页列数: <input type="number" id="inputCols" value="5" min="1"></span>
+                <span>进度: <input type="number" id="inputPage" value="1"> / <span id="totalPages">0</span></span>
+            </div>
+        </div>
+
+        <!-- 右侧标签栏 -->
+        <div class="sidebar">
+            <h3>标签类别</h3>
+            <button id="btnNewTag" class="btn-new">新建标签</button>
+            <div id="labelList" class="label-list">
+                <!-- 动态标签列表 -->
+            </div>
+            <hr>
+            <div class="current-status">
+                <p>当前选定标签: <span id="activeLabelDisplay" style="font-weight:bold; color:gray;">无</span></p>
+                <p class="hint">点击下方列表选择要打的标签，再次点击取消选择。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 将数据类型传给JS -->
+    <script>const DATA_TYPE = "$data_type";</script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
