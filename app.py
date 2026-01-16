@@ -252,6 +252,8 @@ if __name__ == "__main__":
     with open(CONFIG_FILE, 'w') as f:
         json.dump(config_to_save, f)
 
+    config_data.update(config_to_save)
+    
     print(f"Data Type: {_type}")
     print(f"Data Path: {_dpath}")
     print(f"Label Path: {_lpath}")
