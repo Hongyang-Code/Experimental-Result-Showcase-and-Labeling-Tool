@@ -1,5 +1,9 @@
 __pycache__/
+
+# 忽略文件夹下的所有内容
 demo_scripts/*
 exp_result/*
-!demo_scripts/
-!exp_result/
+
+# 但是不要忽略其中的 .gitkeep 文件
+!demo_scripts/.gitkeep
+!exp_result/.gitkeep
