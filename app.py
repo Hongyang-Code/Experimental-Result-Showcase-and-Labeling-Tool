@@ -252,8 +252,12 @@ if __name__ == "__main__":
     with open(CONFIG_FILE, 'w') as f:
         json.dump(config_to_save, f)
 
+    # === 关键修正：更新内存中的配置 ===
+    # 之前的问题是：load_config() 在模块加载时执行，读取的是旧配置
+    # 这里虽然更新了文件，但内存里的 config_data 还是旧的
+    # 所以必须手动更新一下全局变量 config_data
     config_data.update(config_to_save)
-    
+
     print(f"Data Type: {_type}")
     print(f"Data Path: {_dpath}")
     print(f"Label Path: {_lpath}")

@@ -1,1 +1,1 @@
-{"DATA_TYPE": "i", "DATA_PATH": "./exp_result", "LABEL_PATH": "./label"}
+{"DATA_TYPE": "i", "DATA_PATH": "/data2/lhy/project/AbnormalVesselDetect/Result/FirstTryonFIRE/img", "LABEL_PATH": "/data2/lhy/project/AbnormalVesselDetect/Result/FirstTryonFIRE/label"}
