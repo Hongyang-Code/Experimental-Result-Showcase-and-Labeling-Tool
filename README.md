@@ -124,4 +124,3 @@ python app.py i ./exp_result ./label 10081
 
 Taking [FIRE Dataset](https://www.ics.forth.gr/cvrl/fire/) as an example, the interface after startup is as follows:
 ![Startup Interface](./fig_show/img_type.jpg)
-> Optimized for Research & Deployment.
