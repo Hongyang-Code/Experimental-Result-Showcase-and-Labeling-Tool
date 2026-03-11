@@ -1,7 +1,7 @@
 let config = {
     page: 1,
-    rows: 4,
-    cols: 5,
+    rows: 1,
+    cols: 1,
     totalPages: 0
 };
 

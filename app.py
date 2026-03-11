@@ -120,7 +120,7 @@ class GetFile:
 class GetData:
     def GET(self):
         web.header('Content-Type', 'application/json')
-        user_data = web.input(page=1, rows=4, cols=5)
+        user_data = web.input(page=1, rows=1, cols=1)
         page = int(user_data.page)
         rows = int(user_data.rows)
         cols = int(user_data.cols)
